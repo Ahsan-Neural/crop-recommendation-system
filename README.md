@@ -45,11 +45,11 @@ Coconut, Cotton, Jute, Coffee
 2. Run the app:
    streamlit run app.py
 
+
 ## Dataset
 
-Public crop recommendation dataset via Kaggle — 
-2200 samples, 22 crop classes, 7 features.
-
+Public crop recommendation dataset — 2200 samples, 22 crop classes, 7 features.  
+Source: [Crop Recommendation Dataset](https://raw.githubusercontent.com/nileshely/Crop-Recommendation/main/Crop_Recommendation.csv)
 ## Author
 
 **Ahsan Neural** — [Kaggle Profile](https://www.kaggle.com/ahsanneural)
