@@ -1,71 +1,92 @@
-# Crop Recommendation System
+# 🌾 Crop Recommendation System
 
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Version](https://img.shields.io/badge/version-1.0.0-green)
+> A machine learning web application that recommends the best crop to grow based on soil nutrients and weather conditions.
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Features](#features)
-5. [Contributing](#contributing)
-6. [License](#license)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-red?style=flat-square)](https://ahsan-crop-recommendation.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3.7+-blue?style=flat-square&logo=python)](https://www.python.org/)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Random%20Forest-orange?style=flat-square)](https://scikit-learn.org/)
 
-## Introduction
+## 📋 Overview
 
-Welcome to the **Crop Recommendation System**! This project aims to help farmers make better decisions on crop selection based on various environmental factors. The system uses machine learning algorithms to predict the best crops suitable for a given area.
+This application uses a **Random Forest Classifier** trained on **2,200 samples** across **22 crop types** to predict the most suitable crop for given soil and weather conditions. It provides data-driven recommendations to optimize agricultural productivity.
 
-## Installation
+## 🎯 Features
 
-To install the project, follow the steps below:
+- **Smart Predictions:** ML-powered crop recommendations based on 7 environmental parameters
+- **Interactive UI:** User-friendly Streamlit interface
+- **22 Crop Types:** Comprehensive coverage of diverse crops
+- **Real-time Demo:** Try it live at the Streamlit app link above
 
-1. Clone the repository:
+## 📊 Input Parameters
+
+| Parameter | Description | Unit |
+|-----------|-------------|------|
+| **Nitrogen** | Nitrogen content in soil | mg/kg |
+| **Phosphorus** | Phosphorus content in soil | mg/kg |
+| **Potassium** | Potassium content in soil | mg/kg |
+| **Temperature** | Ambient temperature | °C |
+| **Humidity** | Relative humidity | % |
+| **pH Value** | Soil pH level | 0–14 |
+| **Rainfall** | Annual rainfall | mm |
+
+## 🌱 Supported Crops
+
+Rice, Maize, Chickpea, Kidney Beans, Pigeon Peas, Moth Beans, Mung Bean, Black Gram, Lentil, Pomegranate, Banana, Mango, Grapes, Watermelon, Muskmelon, Apple, Orange, Papaya, Coconut, Cotton, Jute, Coffee
+
+## 🛠️ Tech Stack
+
+- **Language:** Python
+- **ML Framework:** Scikit-learn (Random Forest Classifier)
+- **Web Framework:** Streamlit
+- **Data Processing:** Pandas, NumPy
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.7+
+- pip
+
+### Installation
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/Ahsan-Neural/crop-recommendation-system.git
-   ```
-2. Navigate to the directory:
-   ```bash
    cd crop-recommendation-system
    ```
-3. Install the required packages:
+
+2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-## Usage
-
-Once the installation is complete, you can use the crop recommendation system as follows:
-
-1. Launch the application:
+3. **Run the application:**
    ```bash
-   python app.py
+   streamlit run app.py
    ```
-2. Input the necessary environmental parameters when prompted.
-3. Get the recommended crop!
 
-## Features
-- **User-friendly Interface:** Easy to navigate and use.
-- **Accurate Predictions:** Uses state-of-the-art machine learning techniques for crop recommendation.
-- **Customizable:** Easily add or modify input parameters to expand the recommendation system.
+4. **Access the app:**
+   Open your browser and navigate to `http://localhost:8501`
 
-## Contributing
+## 📈 Dataset
 
-We welcome contributions! To contribute:
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-branch
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m 'Add feature' 
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-branch
-   ```
-5. Open a Pull Request.
+- **Total Samples:** 2,200
+- **Crop Classes:** 22
+- **Features:** 7
+- **Source:** [Crop Recommendation Dataset](https://raw.githubusercontent.com/nileshely/Crop-Recommendation/main/Crop_Recommendation.csv)
 
-## License
+## 👤 Author
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+**Ahsan Neural** — ML Enthusiast & Data Scientist  
+[![Kaggle](https://img.shields.io/badge/Kaggle-Profile-blue?style=flat-square&logo=kaggle)](https://www.kaggle.com/ahsanneural)
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repository and submit a pull request with your improvements.
+
+---
+
+**Try the live demo:** [Crop Recommendation System](https://ahsan-crop-recommendation.streamlit.app/)
