@@ -1,55 +1,71 @@
 # Crop Recommendation System
 
-A machine learning web application that recommends the best crop to grow 
-based on soil nutrients and weather conditions.
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-green)
 
-**Live Demo:** https://ahsan-crop-recommendation.streamlit.app/
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Features](#features)
+5. [Contributing](#contributing)
+6. [License](#license)
 
-## Overview
+## Introduction
 
-This app uses a Random Forest classifier trained on 2200 samples across 
-22 crop types to predict the most suitable crop for given soil and 
-weather conditions.
+Welcome to the **Crop Recommendation System**! This project aims to help farmers make better decisions on crop selection based on various environmental factors. The system uses machine learning algorithms to predict the best crops suitable for a given area.
 
-## Input Parameters
+## Installation
 
-| Parameter | Description | Unit |
-|---|---|---|
-| Nitrogen | Nitrogen content in soil | mg/kg |
-| Phosphorus | Phosphorus content in soil | mg/kg |
-| Potassium | Potassium content in soil | mg/kg |
-| Temperature | Ambient temperature | °C |
-| Humidity | Relative humidity | % |
-| pH Value | Soil pH level | 0–14 |
-| Rainfall | Annual rainfall | mm |
+To install the project, follow the steps below:
 
-## Crops Predicted
-
-Rice, Maize, Chickpea, Kidney Beans, Pigeon Peas, Moth Beans, 
-Mung Bean, Black Gram, Lentil, Pomegranate, Banana, Mango, 
-Grapes, Watermelon, Muskmelon, Apple, Orange, Papaya, 
-Coconut, Cotton, Jute, Coffee
-
-## Tech Stack
-
-- Python
-- Scikit-learn (Random Forest Classifier)
-- Streamlit
-- Pandas, NumPy
-
-## How to Run Locally
-
-1. Install dependencies:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ahsan-Neural/crop-recommendation-system.git
+   ```
+2. Navigate to the directory:
+   ```bash
+   cd crop-recommendation-system
+   ```
+3. Install the required packages:
+   ```bash
    pip install -r requirements.txt
+   ```
 
-2. Run the app:
-   streamlit run app.py
+## Usage
 
+Once the installation is complete, you can use the crop recommendation system as follows:
 
-## Dataset
+1. Launch the application:
+   ```bash
+   python app.py
+   ```
+2. Input the necessary environmental parameters when prompted.
+3. Get the recommended crop!
 
-Public crop recommendation dataset — 2200 samples, 22 crop classes, 7 features.  
-Source: [Crop Recommendation Dataset](https://raw.githubusercontent.com/nileshely/Crop-Recommendation/main/Crop_Recommendation.csv)
-## Author
+## Features
+- **User-friendly Interface:** Easy to navigate and use.
+- **Accurate Predictions:** Uses state-of-the-art machine learning techniques for crop recommendation.
+- **Customizable:** Easily add or modify input parameters to expand the recommendation system.
 
-**Ahsan Neural** — [Kaggle Profile](https://www.kaggle.com/ahsanneural)
+## Contributing
+
+We welcome contributions! To contribute:
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-branch
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m 'Add feature' 
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-branch
+   ```
+5. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
